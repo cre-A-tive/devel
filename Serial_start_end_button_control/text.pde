@@ -1,4 +1,3 @@
-int z = 0;
 
 void textSetup()
 {
@@ -19,25 +18,22 @@ void mainText()
   textAlign(CENTER);
   drawType(width * 0.5);
   keyReleased();
+  
 }
 
 void keyReleased() 
 {
-  if (keyCode == RIGHT) 
+  if (myVal == 1) 
   {
     background(255);
     stroke(0);
   }
-  else if (keyCode == LEFT) 
+  else if (myVal == 2) 
   {
     background(255);
     stroke(0);
     fill(0);
     text("BYE... See You!", 300, 100);
     exit();
-  }
-  else if(keyCode == ' ')
-  {
-    return;
   }
 }
