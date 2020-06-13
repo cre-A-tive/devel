@@ -1,27 +1,31 @@
 void startMenuactions() 
 {
-  if (myVal == 1) 
+  switch((int)myVal)
   {
+    case 1:
     background(255);
     stroke(0);
-    inGame();
-    pause();
-  }
-  
-  else if (myVal == 2) 
-  {
+    ingameWindow();
+    ingameActions();
+    break;
+    
+    case 2:
     exitMessage();
-  }
-  
-  else if(myVal == 3)
-  {
-    background(255);
-    stroke(0);
-    fill(0);
-    text("PAUSE", 300, 200);
+    break;
+    
+    case 3:
     pauseMenu();
+    break;
+    
+    case 4:
+    break;
+    
+    case 5:
+    break;
   }
 }
+
+
 
 void pause()
 {

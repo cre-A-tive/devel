@@ -1,6 +1,5 @@
-int k = 3;
 
-void inGame()
+void ingameWindow()
 {
   //information bar
   background(0); 
@@ -20,4 +19,17 @@ void inGame()
   line(240, 150, 240, 700);
   line(360, 150, 360, 700);
   line(480, 150, 480, 700);
+  
 }
+
+void ingameActions()
+{
+  if(myVal == 3)
+  {
+    background(255);
+    pauseMenu();
+  }
+}
+
+  
+  

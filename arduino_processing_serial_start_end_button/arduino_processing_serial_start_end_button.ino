@@ -13,6 +13,8 @@ void setup()
   pinMode(b1, INPUT_PULLUP); 
   pinMode(b2, INPUT_PULLUP);
   pinMode(b3, INPUT_PULLUP);
+  pinMode(b4, INPUT_PULLUP);
+  pinMode(b5, INPUT_PULLUP);
 }
 
 void loop() 
@@ -25,23 +27,23 @@ void loop()
   
   if(c1 == 0)
   {
-    Serial.println("Left");
+    Serial.println("1");
   }
   else if(c2 == 0)
   {
-    Serial.println("Right");
+    Serial.println("2");
   }
   else if(c3 == 0)
   {
-    Serial.println("Top");
+    Serial.println("3");
   }
   else if(c4 == 0)
   {
-    Serial.println("Bottom");
+    Serial.println("4");
   }
   else if(c5 == 0)
   {
-    Serial.println("Center");
+    Serial.println("5");
   }
   delay(100);
 }
