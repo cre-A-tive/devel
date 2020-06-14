@@ -1,4 +1,3 @@
-
 void ingameWindow()
 {
   //information bar
@@ -6,8 +5,7 @@ void ingameWindow()
   stroke(200);
   strokeWeight(3);
   line(0, 150, 800, 150); 
-  
-  
+
   //game node touch bar
   stroke(255);
   strokeWeight(3);
@@ -20,15 +18,6 @@ void ingameWindow()
   line(360, 150, 360, 700);
   line(480, 150, 480, 700);
   
-}
-
-void ingameActions()
-{
-  if(myVal == 3)
-  {
-    background(255);
-    pauseMenu();
-  }
 }
 
   

@@ -3,10 +3,7 @@ void startMenuactions()
   switch((int)myVal)
   {
     case 1:
-    background(255);
-    stroke(0);
     ingameWindow();
-    ingameActions();
     break;
     
     case 2:
@@ -18,14 +15,10 @@ void startMenuactions()
     break;
     
     case 4:
-    break;
-    
-    case 5:
+    exitMessage();
     break;
   }
 }
-
-
 
 void pause()
 {

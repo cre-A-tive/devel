@@ -18,5 +18,4 @@ void mainText()
 {
   textAlign(CENTER, CENTER);
   drawType(width * 0.5); 
-  startMenuactions();
 }

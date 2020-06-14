@@ -1,4 +1,4 @@
-void setup()
+;void setup()
 {
   size(600, 800); background(255);
   textSetup();
@@ -7,9 +7,6 @@ void setup()
 
 void draw()
 {
-  //test  
-  //test2
-  startMenu(); 
-  mainText();
+  startMenu();
   buttonInput();
 }

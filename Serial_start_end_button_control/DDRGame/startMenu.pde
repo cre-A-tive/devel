@@ -15,4 +15,5 @@ void startMenu()
   text("2. EXIT", 300, 700);
   
    startMenuactions();
+   mainText();
 }
