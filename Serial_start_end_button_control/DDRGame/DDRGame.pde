@@ -1,8 +1,13 @@
-;void setup()
+Node node;
+PFont f;
+
+void setup()
 {
-  size(600, 800); background(255);
+  size(600, 800); 
+  background(255);
   textSetup();
-  arduinSetup();
+  arduinoSetup();
+  node = new Node();
 }
 
 void draw()

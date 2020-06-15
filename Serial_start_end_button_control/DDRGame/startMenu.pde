@@ -1,6 +1,11 @@
 void startMenu()
 {
-   fill(200);
+  textSize(45);
+  textAlign(CENTER);
+  textMode(CENTER);
+  text("Welcome to DDR World!", 300, 200);
+  
+  fill(200);
   textMode(CENTER);
   rectMode(CENTER);
   rect(300, 550, 400, 100);
@@ -14,6 +19,5 @@ void startMenu()
   fill(0);
   text("2. EXIT", 300, 700);
   
-   startMenuactions();
-   mainText();
+  startMenuactions();
 }

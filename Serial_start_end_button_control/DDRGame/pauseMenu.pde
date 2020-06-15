@@ -1,7 +1,3 @@
-void pauseMenuactions()
-{
-}
-
 void pauseMenu()
 { 
     rect(400, 450, 100, 50);
@@ -15,5 +11,4 @@ void pauseMenu()
     text("2. RESTART", 400, 450);
     text("3. MAIN MENU", 200, 600);
     text("4. QUIT", 400, 600);
-    pauseMenuactions();
 }

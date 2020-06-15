@@ -6,7 +6,7 @@ String myString = null; //a variable to collect serial data
 int nl = 10; // ASCII code for carage return in serial.
 float myVal; //float for starting converted ascii serial data
 
-void arduinSetup() //setup
+void arduinoSetup() //setup
 {
   String myPort = Serial.list() [0]; // find correct serial port
   mySerial = new Serial(this, myPort, 9600);
