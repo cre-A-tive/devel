@@ -1,13 +1,24 @@
 Node node;
+Message message;
+Ingame ingame;
 PFont f;
+
+void fontsetting()
+{
+  printArray(PFont.list());  
+  f = createFont("굴림", 24);  
+  textFont(f);
+}
 
 void setup()
 {
   size(600, 800); 
   background(255);
-  textSetup();
   arduinoSetup();
+  fontsetting();
   node = new Node();
+  message = new Message();
+  ingame = new Ingame();
 }
 
 void draw()
