@@ -36,7 +36,6 @@ void ingameBackground()
   line(450, 150, 450, 700);
 }
 
-
 class Node
 {
   int y;
