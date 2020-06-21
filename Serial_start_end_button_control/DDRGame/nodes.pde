@@ -1,23 +1,21 @@
 public class Node
 {
-  int y;
-  int vy = 2;
+  int y = 700;
+  int vy = -2;
   
   public void draw()
   {
     ingame.backGround();
     noStroke();
     fill(255, 0, 0);
-    rect(0, y + 150, 300, 20);
+    rect(0, y, 300, 20);
 
-    if(y > 550)
+    if(y < 150)
     {
-      y = 0;
+      y = 700;
     }
   }
-  
-  
- 
+
   public void nodeMove()
   {
     y += vy;

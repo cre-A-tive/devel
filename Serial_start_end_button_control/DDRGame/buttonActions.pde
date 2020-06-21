@@ -1,23 +1,23 @@
 void startMenuactions() 
 {
-  switch((int)myVal)
-  {
-    case 1:
-    ingame.Window();
-    break;
+    if(myVal == 1)
+    {
+      ingame.Window();
+      status = "ingame";
+    }
     
-    case 2:
-    message.exit_();
-    break;
-    
-    case 3:
-    message.pauseMenu();
-    break;
-    
-    case 4:
-    message.exit_();
-    break;
-  }
+    else if(myVal == 2)
+    {
+      message.exit_();
+    }
+  
+    else if(myVal == 3)
+    {
+      println("pause");
+      background(255);
+      message.pauseMenu();
+      status = "pause";
+    }
 }
 
 class Message
@@ -25,7 +25,6 @@ class Message
   public void pause()
   {
     fill(255);
-    textMode(CENTER);
     rectMode(CENTER);
     rect(550, 10, 100, 50);
     fill(0);
@@ -51,14 +50,10 @@ class Message
   { 
       rect(400, 450, 100, 50);
       background(255);
-      textMode(CENTER);
       textSize(45);
       text("PAUSE", 300, 200);
-      textMode(CENTER);
       textSize(20);
       text("1. RESUME", 200, 450);
-      text("2. RESTART", 400, 450);
-      text("3. MAIN MENU", 200, 600);
-      text("4. QUIT", 400, 600);
+      text("2. QUIT", 400, 450);
   } 
 }

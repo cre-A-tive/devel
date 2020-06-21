@@ -2,6 +2,7 @@ Node node;
 Message message;
 Ingame ingame;
 PFont f;
+String status;
 
 void fontsetting()
 {
@@ -23,6 +24,10 @@ void setup()
 
 void draw()
 {
-  startMenu();
-  buttonInput();
+  status = "ready";
+  if(status == "ready")
+  {
+    startMenu();
+    buttonInput();
+  }  
 }
